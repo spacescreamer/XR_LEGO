@@ -212,7 +212,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1516981869}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -242,31 +242,13 @@ RectTransform:
   - {fileID: 2090783809}
   - {fileID: 602407996}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -5}
   m_SizeDelta: {x: 120, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &86315550 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6199207772313040119, guid: 60d537a9a19033e43b07d6456f71d0f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 1516981865}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &86315557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86315550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13aa41e7cf3bf7c47b7718a4e3fba297, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &143538191
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,6 +260,7 @@ GameObject:
   - component: {fileID: 143538193}
   - component: {fileID: 143538192}
   - component: {fileID: 143538194}
+  - component: {fileID: 143538195}
   m_Layer: 0
   m_Name: Timeline
   m_TagString: Untagged
@@ -355,7 +338,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143538191}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -393,6 +376,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &143538195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143538191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52bc33fcf09107e49a5f5cd7e686748c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &154492483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -408,7 +403,7 @@ PrefabInstance:
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
@@ -448,17 +443,17 @@ PrefabInstance:
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
@@ -811,7 +806,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545310617}
-  m_LocalRotation: {x: -0.258819, y: 0, z: 0, w: 0.9659259}
+  m_LocalRotation: {x: -0.258819, y: -0, z: -0, w: 0.9659259}
   m_LocalPosition: {x: -1.51, y: -21.7, z: 68.8}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
@@ -819,7 +814,7 @@ Transform:
   - {fileID: 584050484}
   - {fileID: 1542929056}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -30, y: 0, z: 0}
 --- !u!1001 &584050483
 PrefabInstance:
@@ -1515,7 +1510,7 @@ MonoBehaviour:
   targetIsSelf: 1
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
-  delay: 0.1
+  delay: 0.2
   duration: 7
   easeType: 37
   easeCurve:
@@ -2308,7 +2303,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056046201}
-  m_LocalRotation: {x: -0.258819, y: 0, z: 0, w: 0.9659259}
+  m_LocalRotation: {x: -0.258819, y: -0, z: -0, w: 0.9659259}
   m_LocalPosition: {x: 0, y: -20.9, z: 68.3}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
@@ -2463,7 +2458,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 824201a00249ef7429bff0f790108e79,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 824201a00249ef7429bff0f790108e79,
         type: 3}
@@ -2934,16 +2929,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 143538192}
-        m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
-        m_MethodName: Resume
-        m_Mode: 1
+      - m_Target: {fileID: 143538195}
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: GameScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1259864459
@@ -3092,7 +3087,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366339813}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.02, y: -10.15, z: 72.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3547,7 +3542,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492471109}
-  m_LocalRotation: {x: -0.258819, y: 0, z: 0, w: 0.9659259}
+  m_LocalRotation: {x: -0.258819, y: -0, z: -0, w: 0.9659259}
   m_LocalPosition: {x: -2.3, y: -14.52, z: 69.79}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
@@ -3650,6 +3645,11 @@ PrefabInstance:
       propertyPath: m_LineWidth
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 6199207771924587705, guid: 60d537a9a19033e43b07d6456f71d0f1,
+        type: 3}
+      propertyPath: m_LineLength
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6199207771924587707, guid: 60d537a9a19033e43b07d6456f71d0f1,
         type: 3}
       propertyPath: m_HoverToSelect
@@ -3669,6 +3669,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LineWidth
       value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199207772289805480, guid: 60d537a9a19033e43b07d6456f71d0f1,
+        type: 3}
+      propertyPath: m_LineLength
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6199207772289805482, guid: 60d537a9a19033e43b07d6456f71d0f1,
         type: 3}
@@ -3799,6 +3804,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!20 &1516981869 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6199207771479359101, guid: 60d537a9a19033e43b07d6456f71d0f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1516981865}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1542929055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4124,7 +4135,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711049285}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -19.432182, y: 1.521596, z: 4.9529586}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4147,7 +4158,7 @@ PrefabInstance:
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
@@ -4167,7 +4178,7 @@ PrefabInstance:
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5699998
+      value: -0.56999993
       objectReference: {fileID: 0}
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
@@ -4187,17 +4198,17 @@ PrefabInstance:
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7112702202580195682, guid: e48ba0e51e99af34c8e155d684dd7fc3,
         type: 3}
@@ -4447,7 +4458,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9943cbf6a6f7de14591e8f2c61fb36e0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9943cbf6a6f7de14591e8f2c61fb36e0,
         type: 3}
@@ -4695,8 +4706,8 @@ MonoBehaviour:
   targetIsSelf: 1
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
-  delay: 0.1
-  duration: 7
+  delay: 0.2
+  duration: 8
   easeType: 37
   easeCurve:
     serializedVersion: 2
@@ -4704,12 +4715,12 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0.010564761
-      outSlope: 0.010564761
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.49583334
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
@@ -4847,7 +4858,7 @@ MonoBehaviour:
   targetIsSelf: 1
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
-  delay: 0.1
+  delay: 0.2
   duration: 7
   easeType: 37
   easeCurve:
