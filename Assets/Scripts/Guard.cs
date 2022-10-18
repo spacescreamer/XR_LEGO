@@ -7,7 +7,7 @@ public class Guard : MonoBehaviour
     public static event System.Action OnGuardHasSpottedPlayer;
     public float speed = 3;
     public float waitTime = .3f;
-    public float turnSpeed = 90;
+    public float turnSpeed = 60;
     public float timeToSpotPlayer = .1f;
 
     public Light spotlight;
@@ -70,6 +70,8 @@ public class Guard : MonoBehaviour
             {
                 if (!Physics.Linecast (transform.position, player.position, viewMask))
                 {
+                    StopAllCoroutines();
+                    DoStop();
                     return true; 
                 }
             }
@@ -80,7 +82,6 @@ public class Guard : MonoBehaviour
     IEnumerator FollowPath(Vector3[] waypoints)
     {
         transform.position = waypoints[0];
-
         int targetWaypointIndex = 1;
         Vector3 targetWaypoint = waypoints[targetWaypointIndex];
         transform.LookAt(targetWaypoint);
@@ -90,11 +91,13 @@ public class Guard : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, targetWaypoint, speed * Time.deltaTime);
             if (transform.position == targetWaypoint)
             {
+                DoTurn();
                 targetWaypointIndex = (targetWaypointIndex + 1) % waypoints.Length;
                 targetWaypoint = waypoints[targetWaypointIndex];
-                yield return new WaitForSeconds (waitTime);
-                yield return StartCoroutine (TurnToFace(targetWaypoint));
+                yield return new WaitForSeconds(waitTime);
+                yield return StartCoroutine(TurnToFace(targetWaypoint));
             }
+            DoWalk();
             yield return null;
         }
     }
@@ -109,7 +112,8 @@ public class Guard : MonoBehaviour
             float angle = Mathf.MoveTowardsAngle (transform.eulerAngles.y, targetAngle, turnSpeed * Time.deltaTime);
             transform.eulerAngles = Vector3.up * angle;
             yield return null;
-        }               
+        }
+
     }
 
     private void OnDrawGizmos()
@@ -129,5 +133,21 @@ public class Guard : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawRay(transform.position, transform.forward * viewDistance);
+    }
+
+        
+    private void DoTurn()
+    {
+        this.gameObject.GetComponent<Animator>().SetBool("Turn", true);
+    }
+
+    private void DoWalk()
+    {
+        this.gameObject.GetComponent<Animator>().SetBool("Turn", false);
+    }
+
+    private void DoStop()
+    {
+        this.gameObject.GetComponent<Animator>().SetTrigger("Stop");
     }
 }
