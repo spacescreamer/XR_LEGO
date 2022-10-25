@@ -24,7 +24,7 @@ public class Game : MonoBehaviour
     {
         if (gameIsOver)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }                            
     }
 
