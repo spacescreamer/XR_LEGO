@@ -802,7 +802,7 @@ MonoBehaviour:
   m_SmoothMovement: 0
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
-  m_Reticle: {fileID: 3770400540450882647, guid: 4203195269c8de741b896f686d4e12ea,
+  m_Reticle: {fileID: 919132149155446097, guid: 0d75e607e40e2c14b8be7eb3e4573a04,
     type: 3}
   m_StopLineAtFirstRaycastHit: 1
 --- !u!1 &6199207771990497184
@@ -1517,7 +1517,7 @@ MonoBehaviour:
   m_SmoothMovement: 0
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
-  m_Reticle: {fileID: 3770400540450882647, guid: 4203195269c8de741b896f686d4e12ea,
+  m_Reticle: {fileID: 919132149155446097, guid: 0d75e607e40e2c14b8be7eb3e4573a04,
     type: 3}
   m_StopLineAtFirstRaycastHit: 1
 --- !u!1 &6199207772313040119
@@ -1715,6 +1715,7 @@ GameObject:
   - component: {fileID: 6199207772838196224}
   - component: {fileID: 6199207772838196227}
   - component: {fileID: 6199207772838196225}
+  - component: {fileID: 6199207772838196226}
   m_Layer: 0
   m_Name: Locomotion System
   m_TagString: Untagged
@@ -1839,3 +1840,19 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+--- !u!114 &6199207772838196226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6199207772838196284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08852827d7fe2b841b12e3765b8ceee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 6199207772838196224}
+  m_DelayTime: 0
+  fadeImage: {fileID: 6199207771321865677}
+  timerValue: 0.1
